@@ -9,17 +9,17 @@ namespace CvHantering.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]
-        public string School { get; set; }
+        public string? School { get; set; }
         [Required]
         [MaxLength(100)]
-        public string Degree { get; set; }
+        public string? Degree { get; set; }
         [Required]
-        []
+        
         public DateTime StartDate { get; set; }
         [Required]
         
         public DateTime EndDate { get; set; }
 
-        public Person Person { get; set; }
+        public Person? Person { get; set; }
     }
 }

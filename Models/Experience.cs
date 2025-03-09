@@ -8,17 +8,17 @@ namespace CvHantering.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]
-        public string Company { get; set; }
+        public string? Company { get; set; }
         [Required]
         [MaxLength(50)]
-        public string Title { get; set; }
+        public string? Title { get; set; }
         [Required]
         [Range(0, 100)]
         public int Years { get; set; }
         [Required]
         [MaxLength(1000)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
-        public Person Person { get; set; }
+        public Person? Person { get; set; }
     }
 }

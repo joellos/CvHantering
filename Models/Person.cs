@@ -8,17 +8,18 @@ namespace CvHantering.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         [Required]
         [MaxLength(11)]
-        public string Phone { get; set; }
+        public string? Phone { get; set; }
         [Required]
         [MaxLength(1000)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
-        public List<Education> Educations { get; set; }
+        public List<Education>? Educations { get; set; }
+        public List<Experience>? Experiences { get; set; }
     }
 }
